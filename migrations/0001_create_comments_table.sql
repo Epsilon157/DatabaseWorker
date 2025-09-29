@@ -14,9 +14,11 @@ VALUES
 ;
 
 */
--- PRAGMA foreign_keys=OFF;
--- BEGIN TRANSACTION;
-CREATE TABLE coauthors (
+
+
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS coauthors (
     bill_id INTEGER,
     people_id INTEGER
 );
